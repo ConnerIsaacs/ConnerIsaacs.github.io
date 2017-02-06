@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani,Cousine');
+
+
+#container,html,body {
+  height:100%;
+  width:100%;
+  background-color:#F2F2F2;
+}
+*{
+  margin:0px;
+  padding:0px;
+}
+#header {
+  height:50%;
+  width:100%;
+  /*background-color:#6b0e04;*/
+  background-image:url(http://i.imgur.com/snxHV00.png);
+  background-size:cover;
+  background-position:fixed;
+  display: flex;
+justify-content: center; /* align horizontal */
+align-items: center;
+  box-shadow:5px 5px 5px black;
+  padding-top:2%;
+}
+#name {
+  color:white;
+  font-size:80px;
+  margin-top:0;
+  padding:50px;
+  font-family:Cousine;
+}
+h2{
+  color:white;
+  font-size: 30px;
+  margin-top:5%;
+  
+}
+span {
+  font-size:30px;
+}
+h1 {
+  padding-top:5%;
+  font-size:60px;
+  color:#7D7D7D;
+  font-family:Cousine;
+}
+.section_header{
+  margin-left:10%;
+  font-size:50px;
+}
+
+
+h2{
+  color:black;
+}
+#Project1{
+   height:50%;
+  width:100%;
+}
+#left{
+  float:left;
+  width:50%;
+  height:100%;
+}
+#right{
+  float:right;
+  width:50%;
+  height:100%;
+}
+img{
+  width:90%;
+  height:100%;
+  max-width:500px;
+  transition: .5s border;
+  -webkit-transition: .5s border;
+}
+
+p {
+  margin:5%;
+  margin-top:10%;
+  font-size:20px;
+  font-family:Rajdhani;
+  
+}
+
+img:hover {
+  border:5px solid black;
+}
+#Contact {
+  background-color:black;
+  margin:0%;
+  padding:0%;
+}
+
+.contact{
+  color:white;
+  margin:5%;
+  padding:0%;
+  display:inline-block;
+  
+ 
+}
+#contactHeader{
+  color:white;
+}
+a p:hover{
+  color:grey;
+}
+.nav {
+  display:inline-block;
+  margin:10px;
+  float:right;
+  margin-left:5%;
+  transition:font-size .5s;
+  color:black;
+  margin-right:40px;
+}
+.nav:hover{
+  font-size:30px;
+}
+#navBar{
+
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+ background-color:#BABABA;
+
+}
