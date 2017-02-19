@@ -1,98 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 </head>
-<body>
- <a name="top"></a>
+
 <div id="container">
-  <div id="navBar">
-    <a href="#contact"><p class="nav">Contact</p></a>
-    <a href="#portfolio"><p class="nav">Portfolio</p></a>
-    <a href="#top"><p class="nav">Top</p></a>
+   <div id="nav">
+    <a href="#contactMe" class="navClick"> <p class="navOption pull-right">Contact</p></a>
+    <a href="#myPortfolio" class="navClick"> <p class="navOption pull-right">Portfolio</p></a>
+    <a href="#aboutMe" class="navClick"><p class="navOption pull-right">About</p></a>
+  </div>
+ 
+  
+  
+  <div id="nameContainer">
+    <p id="Name">&lt;Hello, My name is <span class="nameColor">Conner</span> /&gt;<span id="cursor">|</span></p>
   </div>
   
+  <div id="firstSkyline">
+      <img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487110609/firstSkyline_nvu0mi.png"/>
+  </div><!--Ends firstSkyline-->
+  <a name="aboutMe"></a>
+  <div>
+    <p id="about">About Me</p>
+  </div>
   
-  <div id="header">
+  <div id="leftContent" class="content">
+   <center>
+      <img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487467985/whoami_t722dr.png" class="img-responsive" style="margin-left: 25%">
+    </center>
+    <p id="myParagraph"><span id="indent">I'm</span> Conner Isaacs, an aspiring Web Developer and Designer in Indianapolis, Indiana. My senior year in high school, I took a web design class and fell in love with the subject, and I've been trying to improve my skills ever since! Right now I'm familiar with HTML, CSS, Javascript, jQuery, and bootstrap.  I'm planning on learning SASS soon, as well as looking into back-end languages!</p>
+  </div><!--Ends left Content-->
+  
+  <div id="vertical"><center><hr class="verticalHR"></center></div><!--Ends vertical-->
+  
+  <div id="rightContent" class="content">
     <center>
-      <div id="title">
-        <h1 id="name">Conner Isaacs <br><span>Web Designer | Developer</span></h1>
-      </div>
+      <img class="img-responsive" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487110614/Untitled-2_fdfvju.png"style="margin-right:30%">
+      <hr id="stick" class="verticalHR">
+      <p class="stickText">JEL Career Center (Web Design)</p>
+      <hr id="stick" class="verticalHR">
+      <p class="stickText">FreeCodeCamp <br>(Up to Advanced Front End)</p>
+      <hr id="stick" class="verticalHR">
+      <p class="stickText">Sophomore at Purdue University<br>(Major in Computer Science)</p>
+     
+    </center>
+  </div><!--Ends Right Content-->
+  
+  
+  <div class="miami">
+  <img  src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487110619/secondSkyline_wiy72j.png">
+  </div>
+  
+  <a name="myPortfolio"></a>
+<p id="about">Portfolio</p>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <center>
+        <a href="http://codepen.io/Cylthus/full/ZLaXWg/" target="blank">
+          <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487186805/twitch_hcfikg.jpg">
+        </a>
+      </center>
+    </div>
+    <div class="col-md-6">
+      <p class="description">A Twitch Viewer.  It uses Twitch's API in order to retrieve data about a specified list of streamers. If they are online, it shows the game they are currently streaming and the current title of their stream.
+    </div>
+  </div>
+  
+  <hr>
+  
+    <div class="row">
+    <div class="col-md-6">
+      <center>
+        <a href="http://codepen.io/Cylthus/full/KaXpod/" target="blank">
+          <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487190230/WeatherProject_axywkj.jpg">
+        </a>
+      </center>
+    </div>
+    <div class="col-md-6">
+      <p class="description">A weather app using two API's.  The first API, ipinfo, tracks the user's location.  This data is then given to another API, OpenWeather, which uses the longitude and latitude to show the weather at the user's location.  The background image changes according to the weather at the user's location.
+    </div>
+  </div>
+  
+  <hr>
+  
+    <div class="row">
+    <div class="col-md-6">
+      <center>
+        <a href="http://codepen.io/Cylthus/full/zNKdqa/" target="blank">
+          <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487190232/RandomQuote_Generator_uwl1dx.jpg">
+        </a>
+      </center>
+    </div>
+    <div class="col-md-6">
+      <p class="description"> A web application that generates random quotes. Users can choose the author that they want a quote by, and a new quote by said person will show up on the quote line. If desired, users can also choose to tweet the quote.  A button can be clicked to change the background color if they don't like grey.
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <center>
+        <a href="http://codepen.io/Cylthus/full/OWxqLe/" target="blank">
+          <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487190230/WikipediaViewer_h9oily.jpg">
+        </a>
+      </center>
+    </div>
+    <div class="col-md-6">
+      <p class="description">A Wikipedia viewer. It takes an input from the user and uses Wikipedia's API to grab the top 5 wikipedia results for that string and a description. The app then displays these results on the page, and users can click it to go to that Wikipedia page.
+    </div>
+  </div>
+  <hr>
+  <div class="row contactSection">
+    <div class="col-md-12">
+  <div id="contact">
+    <a name="contactMe"></a>
+    <p id="contactMe">Contact Me</p>
+    <center>
+      
+    <div id="email" class="icon">
+      <a href="mailto:cjisaacs@att.net">
+        <i class="fa fa-envelope fa-4x x" aria-hidden="true">
+        </i>
+        <br>
+        <p>E-mail me</p>
+      </a>
+    </div>
+      
+    <div id="github" class="icon">
+      <a href="https://github.com/ConnerIsaacs" target="blank">
+        <i class="fa fa-github fa-4x x" aria-hidden="true">
+        </i>
+        <br>
+        <p>My Github</p>
+      </a>
+    </div>
+      
+    <div id="linkedIn" class="icon">
+      <a href="https://www.linkedin.com/in/conner-isaacs-56a4a4134/" target="_blank">
+        <i class="fa fa-linkedin-square fa-4x x" aria-hidden="true">
+        </i>
+        <br>
+        <p>My LinkedIn</p>
+      </a>
+    </div>
+      
+    <div id="freeCodeCamp" class="icona">
+        <i class="fa fa-phone-square fa-4x" aria-hidden="true">
+        </i>
+        <br>
+        <p>(317)397-4067</p>
+    </div>
+      
     </center>
   </div>
+    </div></div>
   
-  <a name="portfolio"></a>
-  <h1 class="section_header">Portfolio</h1>
-  <hr>
- 
-    <div id="Project1">
-      <div id="left">
-        <center>
-          <h2>Random Quote Generator</h2>
-          <a href="http://codepen.io/Cylthus/full/zNKdqa/" target="_blank"><img src="http://i.imgur.com/nhoskCG.jpg"></a>
-        </center>
-      </div>
-      <div id="right">
-        <p>A random quote generator, built using HTML, bootstrap, CSS, and jQuery.  Users can click an author they want a quote by, and tweet the quote if they so choose.  The background color is changeable as well. </p>
-      </div>
-    </div>
-  
-  <hr>
-  
-  <div id="Project1">
-      <div id="left">
-        <center>
-          <h2>Weather App</h2>
-          <a href='http://codepen.io/Cylthus/full/KaXpod/' target="_blank"><img src="http://i.imgur.com/XuQNOOA.jpg"></a>
-        </center>
-      </div>
-      <div id="right">
-        <p>My first experiment with API's.  It uses the ipinfo.io api to grab the user's latitude and longitude, and uses that information with the openweather api to grab the weather for the location.  The info displayed is then changed accordingly using javascript. The background picture changes according to the weather.</p>
-      </div>
-    </div>
-  
-  <hr>
-  
-  <div id="Project1">
-      <div id="left">
-        <center>
-          <h2>Wikipedia Viewer</h2>
-          <a href="http://codepen.io/Cylthus/full/OWxqLe/" target="_blank"><img src="http://i.imgur.com/IfZd4nt.jpg"></a>
-        </center>
-      </div>
-      <div id="right">
-        <p> A wikipedia viewer that I built as a personal project.  It takes an input string and then uses it to display the top 5 wikipedia results to the user.  I also experimented with more jQuery while doing it.  A very fun project! </p>
-      </div>
-    </div>
-  
-  <hr>
-  
-  <div id="Project1">
-      <div id="left">
-        <center>
-          <h2>Twitch Viewer</h2>
-          <a href="http://codepen.io/Cylthus/full/ZLaXWg/" target="_blank"><img src="http://i.imgur.com/Bd9bNfN.jpg"></a>
-        </center>
-      </div>
-      <div id="right">
-        <p>A Twitch.tv viewer.  It shows the statuses of specified streamers.  If they are online, it will show the game they are currently playing, and what the title of their stream is.  If offline, it will just state they are offline. (Note: if viewed morning-3ish there is a good chance they will all be offline) </p>
-      </div>
-    </div>
-  
-  <a name="contact"></a>
-   <div id="Contact">
-     <h1 class="section_header" id="contactHeader">Contact</h1>
-  <hr>
-     <center>
-     <p class="contact">Isaacsc@purdue.edu</p>
-     <p class="contact">(317)397-4607</p>
-     <a href="https://www.linkedin.com/in/conner-isaacs-56a4a4134?trk=nav_responsive_tab_profile" target="_blank"><p class="contact">My LinkedIn</p></a>
-     </center>
-      </div>
-    </div>
-  
-   
-  
-    
-</body>
+</div><!--Ends Container-->
+
 </html>
