@@ -26,11 +26,15 @@ $(function() {
     ;</script>
 </head>
 
+<head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+</head>
+
 <div id="container">
    <div id="nav">
     <a href="#contactMe" class="navClick"> <p class="navOption pull-right">Contact</p></a>
     <a href="#myPortfolio" class="navClick"> <p class="navOption pull-right">Portfolio</p></a>
-    <a href="#aboutMe" class="navClick"><p class="navOption pull-right">About</p></a>
+ 
   </div>
  
   
@@ -40,101 +44,85 @@ $(function() {
   </div>
   
   <div id="firstSkyline">
-      <img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487110609/firstSkyline_nvu0mi.png"/>
-  </div><!--Ends firstSkyline-->
-  <a name="aboutMe"></a>
-  <div>
-    <p id="about">About Me</p>
-  </div>
-  
-  <div id="leftContent" class="content">
-   <center>
-      <img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487467985/whoami_t722dr.png" class="img-responsive" style="margin-left: 25%">
-    </center>
-    <p id="myParagraph"><span id="indent">I'm</span> Conner Isaacs, an aspiring Web Developer and Designer in Indianapolis, Indiana. My senior year in high school, I took a web design class and fell in love with the subject, and I've been trying to improve my skills ever since! Right now I'm familiar with HTML, CSS, Javascript, jQuery, and bootstrap.  I'm planning on learning SASS soon, as well as looking into back-end languages!</p>
-  </div><!--Ends left Content-->
-  
-  <div id="vertical"><center><hr class="verticalHR"></center></div><!--Ends vertical-->
-  
-  <div id="rightContent" class="content">
-    <center>
-      <img class="img-responsive" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487110614/Untitled-2_fdfvju.png"style="margin-right:30%">
-      <hr id="stick" class="verticalHR">
-      <p class="stickText">JEL Career Center (Web Design)</p>
-      <hr id="stick" class="verticalHR">
-      <p class="stickText">FreeCodeCamp <br>(Up to Advanced Front End)</p>
-      <hr id="stick" class="verticalHR">
-      <p class="stickText">Sophomore at Purdue University<br>(Major in Computer Science)</p>
-     
-    </center>
-  </div><!--Ends Right Content-->
+
   
   
   <div class="miami">
-  <img  src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487110619/secondSkyline_wiy72j.png">
+  <img  src="https://res.cloudinary.com/dfpvu7r4b/image/upload/v1487110619/secondSkyline_wiy72j.png">
   </div>
   
   <a name="myPortfolio"></a>
-<p id="about">Portfolio</p>
-  
-  <div class="row">
-    <div class="col-md-6">
-      <center>
-        <a href="http://codepen.io/Cylthus/full/dvWErN/" target="blank">
-          <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1490329505/twitch_viewer_v2_dtgehd.png">
-        </a>
-      </center>
-    </div>
-    <div class="col-md-6">
-      <p class="description">A web application I made to see streams that are currently live on the streaming site Twitch.tv.  It uses Twitch's API to receive data about a list of streamers, and shows the info accordingly, such as a preview image, and their current amount of viewers.  The application also allows you to add your own streamer to the list as well as hiding any offline streams from view.
-    </div>
-  </div>
-  
-  <hr>
-  
+    <center><p id="about">My Work</p></center>
+    <h3 id="apps">Applications:</h3>
     <div class="row">
-    <div class="col-md-6">
-      <center>
-        <a href="http://codepen.io/Cylthus/full/KaXpod/" target="blank">
-          <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487190230/WeatherProject_axywkj.jpg">
-        </a>
-      </center>
+      <div class="col-md-6">
+        <a href="https://connerisaacs.github.io/Twitch-Viewer-v3/" target="blank">
+        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698365/twitch_viewer_uhi1cz.png"/></a>
+      </div>
+      <div class="col-md-6">
+         <p class="description"><span id="first">Twitch Stream Viewer:</span> A twitch Viewing app that I created. It allows you to search for a game, and will even predict the game you are typing.  It also allows you to view all games, and let's you see top streams (and load more streams).  There is a menu that can be opened and closed that allows you to search for specific streamers, with a background color displaying whether they are online or not.</p>
+         </div>
     </div>
-    <div class="col-md-6">
-      <p class="description">A weather app using two API's.  The first API, ipinfo, tracks the user's location.  This data is then given to another API, OpenWeather, which uses the longitude and latitude to show the weather at the user's location.  The background image changes according to the weather at the user's location.
+       <div class="row">
+      <div class="col-md-6">
+        <a href="https://connerisaacs.github.io/PomodoroTimer/" target="blank">
+        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/pomodoroTimer_qyadcf.png"/></a>
+      </div>
+         <div class="col-md-6">
+         <p class="description"><span id="first">Pomodoro Timer:</span> A pomodoro timer, featuring adjustable session/break time lengths.  When the clock hits 0, it will automatically switch to the other.</p>
+         </div>
     </div>
-  </div>
-  
-  <hr>
-  
-    <div class="row">
-    <div class="col-md-6">
-      <center>
-        <a href="http://codepen.io/Cylthus/full/zNKdqa/" target="blank">
-          <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487190232/RandomQuote_Generator_uwl1dx.jpg">
-        </a>
-      </center>
-    </div>
-    <div class="col-md-6">
-      <p class="description"> A web application that generates random quotes. Users can choose the author that they want a quote by, and a new quote by said person will show up on the quote line. If desired, users can also choose to tweet the quote.  A button can be clicked to change the background color if they don't like grey.
-    </div>
-  </div>
-  
-  <hr>
-  
+      </div>
   <div class="row">
-    <div class="col-md-6">
-      <center>
-        <a href="http://codepen.io/Cylthus/full/OWxqLe/" target="blank">
-          <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1487190230/WikipediaViewer_h9oily.jpg">
+      <div class="col-md-6">
+        <a href="https://connerisaacs.github.io/Random/" target="blank">
+        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/RandomQuote_w9yvld.png"/></a>
+      </div>
+      <div class="col-md-6">
+         <p class="description"><span id="first">Random Quote Machine:</span> A random quote machine. Clicking new quote will cause a different quote to appear on the screen, as well as change the color of the screen. Clicking the tweet icon will automatically fill in the quote to a tweet for you.</p>
+         </div>
+    </div>
+       <h3 id="games">Games:</h3>
+ <div class="row">
+      <div class="col-md-6">
+        <a href="https://codepen.io/Cylthus/full/dWeaVq/" target="blank">
+        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/2048_p80ia8.png"/>
         </a>
-      </center>
+      </div>
+         <div class="col-md-6">
+         <p class="description"> <span id="first">2048:</span> A version of 2048 that I wrote. Written with vanilla javascript. The "score" is the highest number on the board, and buttons or arrow keys may be used to control the board.</p>
+         </div>
     </div>
-    <div class="col-md-6">
-      <p class="description">A Wikipedia viewer. It takes an input from the user and uses Wikipedia's API to grab the top 5 wikipedia results for that string and a description. The app then displays these results on the page, and users can click it to go to that Wikipedia page.
+    <div class="row">
+      <div class="col-md-6">
+        <a href="https://connerisaacs.github.io/Tic-Tac-Toe/" target="blank">
+        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/TicTacToe_dklqtu.png"/>
+        </a></div>
+         <div class="col-md-6">
+           <p class="description"> <span id="first">Tic-Tac-Toe:</span> A tic-tac-toe game that I wrote. It features a two player version, where you can face off against someone you're with.  It also features a 1 player version against an AI, which was custom written by me.</p>
+         </div>
     </div>
-  </div>
-  <hr>
+    <h3 id="games">Websites:</h3>
+       <div class="row">
+      <div class="col-md-6">
+        <a href="http://www.rightclickplus.com/" target="blank">
+        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496700343/rightclickplus_zkkfso.png"/></a>
+      </div>
+      <div class="col-md-6">
+         <p class="description"><span id="first">Right Click Plus:</span> A website created while at Find8 Digital Media. The website was designed and built out by me.</p>
+         </div>
+    </div>
+  
+
+   
+ 
+
+  
+
+  
+  
+  
+  
   <div class="row contactSection">
     <div class="col-md-12">
   <div id="contact">
@@ -173,7 +161,7 @@ $(function() {
         <i class="fa fa-phone-square fa-4x" aria-hidden="true">
         </i>
         <br>
-        <p>(317)397-4607</p>
+        <p>(317)397-4067</p>
     </div>
       
     </center>
