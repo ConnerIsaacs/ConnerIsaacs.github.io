@@ -7,9 +7,9 @@ img{
   width:100%;
   
 }
-
-.description{
-  margin-right: 10%;
+#first{
+  font-size:15px;
+  font-weight:bold;
 }
 
 html, body {
@@ -33,13 +33,25 @@ html, body {
   margin-left:25%;
   margin-top:40px;
 }
-p {
+p,h1,h2,h3,h4 {
   color:black;
   font-family:Krona One;
 }
+#games,#apps{
+  color:white;
+  width:100%;
+  background-color:black;
+  padding:5px;
+  padding-left:5%;
+}
+.description{
+  margin-top:5%;
+  font-size:12px;
+  padding-right:20%;
+  padding-left:10%;
+}
 #about{
   font-size:40px;
-  margin-left:5%;
     color:#c9635c;
    padding-bottom: 30px;
 }
@@ -95,13 +107,14 @@ p {
 
 .images{
   width:60%;
-  margin-bottom:10px;
-  -webkit-transition: width .5s;
-  transition: border 1s;
-  transition: width 1s;
+margin:5%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  box-shadow:5px 5px 15px black;
 }
 .images:hover{
-  width:65%;
+  transform:scale(1.1);
+  cursor:pointer;
 }
 #indent {
   margin-left:20%;
