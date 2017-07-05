@@ -35,7 +35,14 @@ html, body {
 }
 p,h1,h2,h3,h4 {
   color:black;
-  font-family:Krona One;
+  font-family:Sans-serif;
+}
+.row{
+  padding-top:5%;
+  padding-bottom:5%;
+}
+h1{
+  padding-left:5%;
 }
 #games,#apps{
   color:white;
@@ -46,7 +53,7 @@ p,h1,h2,h3,h4 {
 }
 .description{
   margin-top:5%;
-  font-size:12px;
+  font-size:15px;
   padding-right:20%;
   padding-left:10%;
 }
