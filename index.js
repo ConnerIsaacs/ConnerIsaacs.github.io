@@ -1,4 +1,4 @@
-
+document.getElementById("circle").addEventListener("animationend",moveBackground);
 document.getElementById("placeholderThree").addEventListener("animationend",fadeCircle);
 document.getElementById("placeholderTwo").addEventListener("animationend",fadePosition);
 document.getElementById("bar").addEventListener("animationend",fadeName);
