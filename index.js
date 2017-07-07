@@ -1,4 +1,4 @@
-document.getElementById("circle").addEventListener("animationend",moveBackground);
+
 document.getElementById("placeholderThree").addEventListener("animationend",fadeCircle);
 document.getElementById("placeholderTwo").addEventListener("animationend",fadePosition);
 document.getElementById("bar").addEventListener("animationend",fadeName);
@@ -12,6 +12,7 @@ document.getElementById("backFull").addEventListener("click",getFull);
 document.getElementById("backFront").addEventListener("click",getFront);
 document.getElementById("frontFull").addEventListener("click",getFull);
 document.getElementById("frontBack").addEventListener("click",getBack);
+document.getElementById("circle").addEventListener("animationend",moveBackground);
 document.getElementById("backProject1").addEventListener("mouseover",()=>{ 
 document.getElementById("backCover1").style.height = "0%";
 });
