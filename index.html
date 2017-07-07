@@ -454,12 +454,18 @@ span{
 		width:80%;
 		padding-bottom:80%;
 	}
+	#homeTitle{
+	transform:scale(.5);
+	}
 }
 @media screen  and (min-width: 501px) and (max-width: 800px) {
    
 	.project, .frontproject{
 		width:40%;
 		padding-bottom:40%;
+	}
+	#homeTitle{
+	transform:scale(.7);
 	}
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
@@ -645,19 +651,19 @@ document.getElementById("backFull").addEventListener("click",getFull);
 document.getElementById("backFront").addEventListener("click",getFront);
 document.getElementById("frontFull").addEventListener("click",getFull);
 document.getElementById("frontBack").addEventListener("click",getBack);
-document.getElementById("backProject1").addEventListener("mouseover",()=>{ 
+document.getElementById("backProject1").addEventListener("mouseover",function(){ 
 document.getElementById("backCover1").style.height = "0%";
 });
 
-document.getElementById("backProject1").addEventListener("mouseout",()=>{ 
+document.getElementById("backProject1").addEventListener("mouseout",function(){ 
 document.getElementById("backCover1").style.height = "100%";
 });
 
-document.getElementById("frontProject1").addEventListener("mouseover",()=>{ 
+document.getElementById("frontProject1").addEventListener("mouseover",function(){ 
 document.getElementById("frontCover1").style.height = "0%";
 });
 
-document.getElementById("frontProject2").addEventListener("mouseout",()=>{ 
+document.getElementById("frontProject2").addEventListener("mouseout",function(){ 
 document.getElementById("frontCover2").style.height = "100%";
 });
 var x = document.getElementsByClassName("home");
@@ -677,67 +683,67 @@ function goHome(){
 	full.style.width = "0%";
 	
 }
-document.getElementById("frontProject2").addEventListener("mouseover",()=>{ 
+document.getElementById("frontProject2").addEventListener("mouseover",function(){ 
 document.getElementById("frontCover2").style.height = "0%";
 });
 
-document.getElementById("frontProject3").addEventListener("mouseout",()=>{ 
+document.getElementById("frontProject3").addEventListener("mouseout",function(){ 
 document.getElementById("frontCover3").style.height = "100%";
 });
 
-document.getElementById("frontProject3").addEventListener("mouseover",()=>{ 
+document.getElementById("frontProject3").addEventListener("mouseover",function(){ 
 document.getElementById("frontCover3").style.height = "0%";
 });
 
-document.getElementById("frontProject4").addEventListener("mouseout",()=>{ 
+document.getElementById("frontProject4").addEventListener("mouseout",function(){ 
 document.getElementById("frontCover4").style.height = "100%";
 });
 
-document.getElementById("frontProject4").addEventListener("mouseover",()=>{ 
+document.getElementById("frontProject4").addEventListener("mouseover",function(){ 
 document.getElementById("frontCover4").style.height = "0%";
 });
 
-document.getElementById("frontProject5").addEventListener("mouseout",()=>{ 
+document.getElementById("frontProject5").addEventListener("mouseout",function(){ 
 document.getElementById("frontCover5").style.height = "100%";
 });
 
-document.getElementById("frontProject5").addEventListener("mouseover",()=>{ 
+document.getElementById("frontProject5").addEventListener("mouseover",function(){ 
 document.getElementById("frontCover5").style.height = "0%";
 });
 
-document.getElementById("frontProject6").addEventListener("mouseout",()=>{ 
+document.getElementById("frontProject6").addEventListener("mouseout",function(){ 
 document.getElementById("frontCover6").style.height = "100%";
 });
 
-document.getElementById("frontProject6").addEventListener("mouseover",()=>{ 
+document.getElementById("frontProject6").addEventListener("mouseover",function(){ 
 document.getElementById("frontCover6").style.height = "0%";
 });
 
-document.getElementById("frontProject7").addEventListener("mouseout",()=>{ 
+document.getElementById("frontProject7").addEventListener("mouseout",function(){ 
 document.getElementById("frontCover7").style.height = "100%";
 });
 
-document.getElementById("frontProject7").addEventListener("mouseover",()=>{ 
+document.getElementById("frontProject7").addEventListener("mouseover",function(){ 
 document.getElementById("frontCover7").style.height = "0%";
 });
 
-document.getElementById("frontProject1").addEventListener("mouseout",()=>{ 
+document.getElementById("frontProject1").addEventListener("mouseout",function(){ 
 document.getElementById("frontCover1").style.height = "100%";
 });
 
-document.getElementById("fullProject1").addEventListener("mouseover",()=>{ 
+document.getElementById("fullProject1").addEventListener("mouseover",function(){ 
 document.getElementById("fullCover1").style.height = "0%";
 });
 
-document.getElementById("fullProject1").addEventListener("mouseout",()=>{ 
+document.getElementById("fullProject1").addEventListener("mouseout",function(){ 
 document.getElementById("fullCover1").style.height = "100%";
 });
 
-document.getElementById("fullProject2").addEventListener("mouseover",()=>{ 
+document.getElementById("fullProject2").addEventListener("mouseover",function(){ 
 document.getElementById("fullCover2").style.height = "0%";
 });
 
-document.getElementById("fullProject2").addEventListener("mouseout",()=>{ 
+document.getElementById("fullProject2").addEventListener("mouseout",function(){ 
 document.getElementById("fullCover2").style.height = "100%";
 });
 
