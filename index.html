@@ -1,219 +1,144 @@
-<!DOCTYPE html>
-<html>
 <head>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script>$(document).ready(function(){
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-  })
-    ;</script>
+ <link rel="stylesheet" href="main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="index.js"></script>
 </head>
-
-<head>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-</head>
-
-<div id="container">
-   <div id="nav">
-    <a href="#contactMe" class="navClick"> <p class="navOption pull-right">Contact</p></a>
-    <a href="#myPortfolio" class="navClick"> <p class="navOption pull-right">Portfolio</p></a>
- 
-  </div>
- 
-  
-  
-  <div id="nameContainer">
-    <p id="Name">&lt;Hello, My name is <span class="nameColor">Conner</span> /&gt;<span id="cursor">|</span></p>
-  </div>
-  
-  <div id="firstSkyline">
-
-  
-  
-  <div class="miami">
-  <img  src="https://res.cloudinary.com/dfpvu7r4b/image/upload/v1487110619/secondSkyline_wiy72j.png">
-  </div>
-  
-  <a name="myPortfolio"></a>
-    <center><p id="about">My Work</p></center>
-    <h1>Full-Stack Development:</h1>
-     <h3 id="apps">Applications:</h3>
-    <div class="row">
-      <div class="col-md-6">
-        <a href="https://realtime-chat.glitch.me/" target="blank">
-        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499285404/Capture_aaxskc.png"/></a>
-      </div>
-      <div class="col-md-6">
-        <p class="description"><span id="first">Technologies Used: </span>Node.js, Socket.io, MongoDB, Mongoose, Express, Javascript, CSS3, HTML5
-         <p class="description"><span id="first">Real-time chat application (Computer only):</span> A real time chatroom. It has many features such as seeing how many people, are currently present, as well as seeing when people join/leave the room. Each message that is sent is saved to a MongoDB database that I have set up.</p>
-         </div>
-    </div>
-      
-    <h1>Back-End Development:</h1>
-     <h3 id="apps">API's:</h3>
-    <div class="row">
-      <div class="col-md-6">
-        <a href="https://randomquoteapi.glitch.me/" target="blank">
-        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499288108/Capture_mvte2i.png"/></a>
-      </div>
-      <div class="col-md-6">
-        <p class="description"><span id="first">Technologies Used: </span>Node.js, Express, CORS, Request, Body-Parser
-         <p class="description"><span id="first">Random Quote API</span> A random quote API. It allows a user to make a call for different categories of quotes, as well as requesting a specific number (less than or equal to 5). There is also a "mostPopular" parameter to receive an object with the most popular category as well as its total amount of calls.</p>
-         </div>
-    </div>
-    <h1>Front-end Development:</h1>
-    <h3 id="apps">Applications:</h3>
-    <div class="row">
-      <div class="col-md-6">
-        <a href="https://connerisaacs.github.io/Twitch-Viewer-v3/" target="blank">
-        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698365/twitch_viewer_uhi1cz.png"/></a>
-      </div>
-      <div class="col-md-6">
-         <p class="description"><span id="first">Twitch Stream Viewer:</span> A twitch Viewing app that I created. It allows you to search for a game, and will even predict the game you are typing.  It also allows you to view all games, and let's you see top streams (and load more streams).  There is a menu that can be opened and closed that allows you to search for specific streamers, with a background color displaying whether they are online or not.</p>
-         </div>
-    </div>
-       <div class="row">
-      <div class="col-md-6">
-        <a href="https://connerisaacs.github.io/PomodoroTimer/" target="blank">
-        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/pomodoroTimer_qyadcf.png"/></a>
-      </div>
-         <div class="col-md-6">
-         <p class="description"><span id="first">Pomodoro Timer:</span> A pomodoro timer, featuring adjustable session/break time lengths.  When the clock hits 0, it will automatically switch to the other.</p>
-         </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <a href="https://connerisaacs.github.io/Javascript-Calculator/" target="blank">
-        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1497037842/calculator_s7dzz5.png"/></a>
-      </div>
-         <div class="col-md-6">
-         <p class="description"><span id="first">Javascript Calculator:</span> A calculator I created from vanilla javascript. It has corrections for many invalid inputs.</p>
-         </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <a href="https://connerisaacs.github.io/Random/" target="blank">
-        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/RandomQuote_w9yvld.png"/></a>
-      </div>
-      <div class="col-md-6">
-        <p class="description"><span id="first">Technologies Used:</span> Node.js, HTML5, CSS3, Javascript, Express and Request</p>
-         <p class="description"><span id="first">Full Stack Random Quote Machine:</span> A random quote machine. This machine uses a random quote API that I built myself, using Node.js. Clicking new quote will cause a different quote to appear on the screen, as well as change the color of the screen. Clicking the tweet icon will automatically fill in the quote to a tweet for you.</p>
-         </div>
-    </div>
-      </div>
-     <h3 id="games">Websites:</h3>
-     <div class="row">
-      <div class="col-md-6">
-        <a href="http://www.lbblafayette.com/" target="blank">
-        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496775083/lbb_cti2f7.png"/>
-        </a></div>
-         <div class="col-md-6">
-           <p class="description"> <span id="first">Lafayette Business to Business:</span> A client for Find8 Digital Media. I was heavily involved in the design and creation of the home page.</p>
-         </div>
-    </div>
-       <div class="row">
-      <div class="col-md-6">
-        <a href="http://www.rightclickplus.com/" target="blank">
-        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496700343/rightclickplus_zkkfso.png"/></a>
-      </div>
-      <div class="col-md-6">
-         <p class="description"><span id="first">Right Click Plus:</span> A website created while at Find8 Digital Media. The website was designed and built out by me.</p>
-         </div>
-    </div>
-       <h3 id="games">Games:</h3>
- <div class="row">
-      <div class="col-md-6">
-        <a href="https://codepen.io/Cylthus/full/dWeaVq/" target="blank">
-        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/2048_p80ia8.png"/>
-        </a>
-      </div>
-         <div class="col-md-6">
-         <p class="description"> <span id="first">2048:</span> A version of 2048 that I wrote. Written with vanilla javascript. The "score" is the highest number on the board, and buttons or arrow keys may be used to control the board.</p>
-         </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <a href="https://connerisaacs.github.io/Tic-Tac-Toe/" target="blank">
-        <img class="images" src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/TicTacToe_dklqtu.png"/>
-        </a></div>
-         <div class="col-md-6">
-           <p class="description"> <span id="first">Tic-Tac-Toe:</span> A tic-tac-toe game that I wrote. It features a two player version, where you can face off against someone you're with.  It also features a 1 player version against an AI, which was custom written by me.</p>
-         </div>
-    </div>
- 
-      
-
-   
- 
-
-  
-
-  
-  
-  
-  
-  <div class="row contactSection">
-    <div class="col-md-12">
-  <div id="contact">
-    <a name="contactMe"></a>
-    <p id="contactMe">Contact Me</p>
-    <center>
-      
-    <div id="email" class="icon">
-      <a href="mailto:cjisaacs@att.net">
-        <i class="fa fa-envelope fa-4x x" aria-hidden="true">
-        </i>
-        <br>
-        <p>E-mail me</p>
-      </a>
-    </div>
-      
-    <div id="github" class="icon">
-      <a href="https://github.com/ConnerIsaacs" target="blank">
-        <i class="fa fa-github fa-4x x" aria-hidden="true">
-        </i>
-        <br>
-        <p>My Github</p>
-      </a>
-    </div>
-      
-    <div id="linkedIn" class="icon">
-      <a href="https://www.linkedin.com/in/conner-isaacs-56a4a4134/" target="_blank">
-        <i class="fa fa-linkedin-square fa-4x x" aria-hidden="true">
-        </i>
-        <br>
-        <p>My LinkedIn</p>
-      </a>
-    </div>
-      
-    <div id="freeCodeCamp" class="icona">
-        <i class="fa fa-phone-square fa-4x" aria-hidden="true">
-        </i>
-        <br>
-        <p>(317)397-4607</p>
-    </div>
-      
-    </center>
-  </div>
-    </div></div>
-  
-</div><!--Ends Container-->
-
-</html>
+<div id="fullContent" class="content">
+	<a href="#" id="fullHome" class="home">Home</a>
+	<a href="#" id="fullFull" class="full">Full-Stack</a>
+	<a href="#" id="fullBack">Back-End</a>
+	<a href="#" id="fullFront">Front-End</a>
+	<div id="fullBody">
+		
+		<a class="projectLinks" href="https://connerisaacs.github.io/Twitch-Viewer-v3/" target="_blank">
+		<div id="fullProject1" class="project">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499285404/Capture_aaxskc.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript, Nodejs, MongoDB, Mongoose, Express, Request, Static.io</h2></div>
+			<div id = "fullCover1" class="cover"><h2>Real-time Chat Application</div>
+		</div>
+		</a>
+			
+			<a class="projectLinks" href="https://connerisaacs.github.io/Twitch-Viewer-v3/" target="_blank">
+		<div id="fullProject2" class="project">
+			<div  id="fullPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/RandomQuote_w9yvld.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "fullCover2" class="cover"><h2>Random Quote Generator</div>
+		</div>
+		</a>
+				
+	</div>
+</div>
+<div id="backContent" class="content">
+	<a href="#" id="backHome" class="home">Home</a>
+	<a href="#" id="backFull" class="full">Full-Stack</a>
+	<a href="#" id="backBack">Back-End</a>
+	<a href="#" id="backFront">Front-End</a>
+	<div id="backBody">	
+		<a class="projectLinks" href="https://randomquoteapi.glitch.me/" target="_blank">
+		<div id="backProject1" class="project">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499288108/Capture_mvte2i.png"></div>
+			<div class="text"><h2 class="tech">Nodejs, CSS3, HTML5, Express, CORS, Request</h2></div>
+			<div id = "backCover1" class="cover"><h2>Random Quote API</div>
+		</div>
+		</a>
+	</div>
+</div>
+<div id="frontContent" class = "content">
+	<a href="#" id="frontHome" class="home">Home</a>
+<a href="#" id="frontFull" class="full">Full-Stack</a>
+	<a href="#" id="frontBack">Back-End</a>
+	<a href="#" id="frontFront">Front-End</a>
+	<div id="frontBody">
+		
+		
+		<a class="projectLinks" href="https://connerisaacs.github.io/Twitch-Viewer-v3/" target="_blank">
+		<div id="frontProject1" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698365/twitch_viewer_uhi1cz.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "frontCover1" class="cover"><h2>Twitch Viewer</div>
+		</div>
+		</a>
+			
+			
+		<a class="projectLinks" href="https://connerisaacs.github.io/PomodoroTimer/" target="_blank">
+		<div id="frontProject2" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/pomodoroTimer_qyadcf.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "frontCover2" class="cover"><h2>Pomodoro Timer</div>
+		</div>
+		</a>
+			
+			
+		<a class="projectLinks" href="https://connerisaacs.github.io/Javascript-Calculator/" target="_blank">
+		<div id="frontProject3" class="frontproject">
+			<div  id="frontPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1497037842/calculator_s7dzz5.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "frontCover3" class="cover"><h2>Javascript Calculator</h2></div>
+		</div>
+		</a>
+			
+			
+			<a class="projectLinks" href="https://codepen.io/Cylthus/full/dWeaVq/" target="_blank">
+		<div id="frontProject4" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/2048_p80ia8.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "frontCover4" class="cover"><h2>2048 Recreation</div>
+		</div>
+		</a>
+				
+				
+				<a class="projectLinks" href="https://connerisaacs.github.io/Tic-Tac-Toe/" target="_blank">
+		<div id="frontProject5" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/TicTacToe_dklqtu.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "frontCover5" class="cover"><h2>Tic-Tac-Toe</div>
+		</div>
+		</a>
+			
+					<a class="projectLinks" href="http://lbblafayette.com/" target="_blank">
+		<div id="frontProject6" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496775083/lbb_cti2f7.png"></div>
+			<div class="text"><h2 class="tech">CSS3, HTML5</h2></div>
+			<div id = "frontCover6" class="cover"><h2>LBB Lafayette Site</div>
+		</div>
+		</a>
+						
+						<a class="projectLinks" href="http://www.rightclickplus.com/" target="_blank">
+		<div id="frontProject7" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496700343/rightclickplus_zkkfso.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3</h2></div>
+			<div id = "frontCover7" class="cover"><h2>RightClickPlus Site</div>
+		</div>
+		</a>
+					
+	</div>
+</div>
+<div id="nav">
+	<a href="#" id="full" class="full">Full-Stack</a>
+	<a href="#" id="back">Back-End</a>
+	<a href="#" id="front">Front-End</a></div>
+<div id="content">
+<div id="homeTitle">
+	<div id="logo">
+		<p id="title">CI</p>
+		<div id="placeholder"></div>
+	</div>
+	<div id="bar"></div>
+	<div id="text">
+		<div id="name" class="centerContent">
+			<p id="nameP">Conner<span>Isaacs</span></p>
+			<div id="placeholderTwo"></div>
+		</div>
+		<div id="hr">
+			<div id="placeholderFour"></div>
+		</div>
+		<div id="position" class="centerContent">
+			<p id="positionP"><span>Web/Software</span> Developer</p>
+			<div id="placeholderThree"></div>
+		</div>
+	</div>
+</div>
+<div id="circle"></div>
+	<p id="e-mail" class="x">Isaacsc@purdue.edu</p>
+	<p  id="phone" class="x">(317)397-4607</p>
+</div>
