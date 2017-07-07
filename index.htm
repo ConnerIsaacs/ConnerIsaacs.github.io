@@ -1,0 +1,840 @@
+<html>
+<head>
+
+<style id="webmakerstyle">
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,800');
+*{
+	margin:0px;
+	padding:0px;
+}
+#fullBody,#backBody,#frontBody{
+	position:absolute;
+	height:50%;
+	width:90%;
+	top:60%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.x{
+	position:absolute;
+	bottom:15%;
+	font-weight:100;
+}
+.home{
+	color:white;
+	border:1px solid white;
+	position:absolute;
+	left:10%;
+	background-image: linear-gradient(white, white);
+	background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+}
+.home:hover{
+	background-size:100% 100%;
+}
+#fullHome:hover{
+		color:#8AACB8;
+}
+#frontHome:hover{
+	color:#EE6363;
+}
+#backHome:hover{
+	color: #78AB46;
+}
+#phone{
+	right:15%;
+}
+#e-mail{
+	left:15%;
+}
+h2{
+	color:white;
+	font-family:Open Sans;
+	font-weight:100;
+	font-size:15px;
+	padding:20px;
+}
+.projectLinks{
+	float:none;
+	padding:0px;
+	margin:0px;
+}
+.backCover{
+	width:100%;
+	height:100%;
+	background-color:#78AB46;
+	position:absolute;
+	z-index:3;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	overflow:hidden;
+	transition: .5s all;
+}
+#backBody a {
+	padding:0px;
+	margin:0px;
+}
+
+.projectLink{
+	margin:0px;
+	padding:0px;
+}
+.projPara{
+	position:absolute;
+	top:60%;
+	left:20%;
+	font-family:Open Sans;
+	color:white;
+	font-weight:100;
+	font-size:20px;
+}
+img{
+	width:99%;
+}
+.project,.frontproject{
+	width:30%;
+	padding-bottom:30%;
+	border:1px solid white;
+	box-sizing:border-box;
+	margin:1%;
+	float:left;
+	position:relative;
+	transition:.5s all;
+}
+
+html,body{
+	height:100%;
+	width:100%;
+}
+#fullContent{
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#8AACB8;
+	transition:.5s all;
+	width:0px;
+	height:0px;
+	z-index:5;
+}
+#backContent{
+	position:absolute;
+	top:0;
+	right:0;
+	background-color:#78AB46;
+	transition:.5s all;
+	width:0px;
+	height:0px;
+	z-index:5;
+}
+#frontContent{
+	position:absolute;
+	bottom:0;
+	left:0;
+	background-color:#EE6363;
+	transition:.5s all;
+	width:0px;
+	height:0px;
+	z-index:5;
+}
+p{
+	font-family:Open Sans;
+	font-weight:800;
+}
+#homeTitle{
+	width:500px;
+	height:30%;
+	display:flex;
+	align-items:center;
+	z-index:0;
+	min-height:150px;
+}
+#nav{
+	height:5%;
+	width:100%;
+	float:left;
+}
+.preview{
+	position:absolute;
+	width:100%;
+	height:60%;
+	display:flex;
+	justify-content:center;
+}
+#fullContent .cover{
+	background-color:#8AACB8;
+	z-index:3;
+}
+.cover{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	overflow:hidden;
+}
+#frontContent .cover{
+	background-color:#EE6363;
+}
+.text{
+	position:absolute;
+	width:100%;
+	height:40%;
+	bottom:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.tech{
+	color:white;
+	font-family:Open Sans;
+	font-weight:100;
+}
+
+.cover{
+	width:100%;
+	height:100%;
+	z-index:3;
+	position:absolute;
+	transition:.5s all;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#backBody .cover{
+	background-color: #78AB46;
+}
+#projectLink{
+	margin-right:0px;
+	margin:0%;
+	padding:0%;
+	float:none;
+}
+a {
+	float:right;
+	font-family:Open Sans;
+	text-decoration:none;
+	font-weight:100;
+	margin-right:5%;
+	color:black;
+	font-size:15px;
+	margin-top:50px;
+	transition:all .5s;
+	padding:10px;
+	box-sizing:border-box;
+}
+#full{
+	color:#8AACB8;
+	background-image: linear-gradient(#8AACB8, #8AACB8);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+	border:1px solid #8AACB8;
+}
+#full:hover{
+	color:white;
+	background-size: 105% 100%;
+}
+#back{
+	color:#78AB46;
+	background-image: linear-gradient(#78AB46, #78AB46);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+	border:1px solid #78AB46;
+}
+#back:hover{
+	color:white;
+	background-size: 105% 100%;
+}
+#front{
+	color:#EE6363;
+	background-image: linear-gradient(#EE6363, #EE6363);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+	border:1px solid #EE6363;
+}
+#front:hover{
+	color:white;
+	background-size: 105% 110%;
+}
+#content{
+	width:100%;
+	height:95%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+}
+#circle{
+	width:0px;
+	height:0px;
+	position:absolute;
+	background-color:#EE6363;
+	right:10%;
+	top:35%;
+	z-index:-1;
+	border-radius:100%;
+}
+#logo{
+	width:25%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	float:left;
+	position:relative;
+}
+
+#title{
+	font-size:110px;
+	padding-right:10px;
+}
+#bar{
+	height:100%;
+	width:1%;
+	background-color:black;
+	float:left;
+	opacity:0;
+}
+#text{
+	width:73%;
+	height:100%;
+	float:right;
+}
+#name{
+	height:49%;
+	width:100%;
+	position:relative;
+}
+#position{
+	height:49%;
+	width:100%;
+	position:relative;
+}
+#hr{
+	height:1%;
+	background-color:black;
+	width:90%;
+	margin:auto;
+	position:relative;
+}
+span{
+	font-weight:100;
+}
+.centerContent{
+	display:flex;
+	justify-content:center;
+}
+#nameP{
+	font-size:45px;
+	margin-top:auto;
+
+}
+#positionP{
+	margin-top:3%;
+	font-size:25px;
+}
+#placeholder{
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:1;
+	background-color:white;
+	animation: opacity .4s forwards;
+	right:0;
+}
+#placeholderTwo,#placeholderThree,#placeholderFour{
+	width:100%;
+	height:100%;
+	background-color:white;
+	position:absolute;
+}
+#backBack{
+	color:#78AB46;
+	background-color:white;
+}
+#backFull,#backFront{
+	color:white;
+	border:1px solid white;
+	background-image: linear-gradient(white, white);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+}
+#backFull:hover,#backFront:hover{
+	color:#78AB46;
+	background-size:105% 100%;
+}
+#fullFront,#fullBack{
+	color:white;
+	border:1px solid white;
+	background-image: linear-gradient(white, white);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+}
+#fullFull{
+	color:#8AACB8;
+	background-color:white;
+}
+#fullFront:hover,#fullBack:hover{
+	color:#8AACB8;
+	background-size:105% 100%;
+}
+#frontFull,#frontBack{
+	color:white;
+	border:1px solid white;
+	background-image: linear-gradient(white, white);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+}
+#frontFront{
+	color:#EE6363;
+	background-color:white;
+}
+#frontFull:hover,#frontBack:hover{
+	color:#EE6363;
+	background-size:105% 100%;
+}
+#placeholderTwo{
+	left:0;
+}
+#placeholderThree{
+	right:0;
+}
+.content{
+	overflow:hidden;
+}
+@keyframes height {
+    0%   {height:0%;opacity:0}
+    100% {height: 60%;opacity:1}
+}
+@keyframes opacity{
+	0% {
+      width:100%;
+   }
+   100% {
+      width:0%;
+   }
+}
+
+@keyframes opacityRight{
+	0% {
+      opacity: 0;
+      transform: translateX(10%);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes circle{
+	0% {
+      width:0px;
+			height: 0px;
+   }
+	50% {
+      width:200px;
+			height: 200px;
+   }
+	100% {
+      width:150px;
+			height: 150px;
+   }
+}
+
+@media screen  and (min-width: 0px) and (max-width: 500px) {
+   
+	.project, .frontproject{
+		width:80%;
+		padding-bottom:80%;
+	}
+}
+@media screen  and (min-width: 501px) and (max-width: 800px) {
+   
+	.project, .frontproject{
+		width:40%;
+		padding-bottom:40%;
+	}
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    #circle {
+        right:25%;
+    }
+	.full{
+		margin-right:10%;
+	}
+	#fullBody,#frontBody,#backBody{
+		width:70%;
+	}
+}
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+    #circle {
+        right:35%;
+    }
+	.full {
+		margin-right:15%;
+	}
+	#fullBody,#frontBody,#backBody{
+		width:60%;
+	}
+}
+</style>
+</head>
+<body>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<div id="fullContent" class="content">
+	<a href="#" id="fullHome" class="home">Home</a>
+	<a href="#" id="fullFull" class="full">Full-Stack</a>
+	<a href="#" id="fullBack">Back-End</a>
+	<a href="#" id="fullFront">Front-End</a>
+	<div id="fullBody">
+		
+		<a class="projectLinks" href="https://connerisaacs.github.io/Twitch-Viewer-v3/" target="_blank">
+		<div id="fullProject1" class="project">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499285404/Capture_aaxskc.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript, Nodejs, MongoDB, Mongoose, Express, Request, Static.io</h2></div>
+			<div id = "fullCover1" class="cover"><h2>Real-time Chat Application</div>
+		</div>
+		</a>
+			
+			<a class="projectLinks" href="https://connerisaacs.github.io/Twitch-Viewer-v3/" target="_blank">
+		<div id="fullProject2" class="project">
+			<div  id="fullPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/RandomQuote_w9yvld.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "fullCover2" class="cover"><h2>Random Quote Generator</div>
+		</div>
+		</a>
+				
+	</div>
+</div>
+<div id="backContent" class="content">
+	<a href="#" id="backHome" class="home">Home</a>
+	<a href="#" id="backFull" class="full">Full-Stack</a>
+	<a href="#" id="backBack">Back-End</a>
+	<a href="#" id="backFront">Front-End</a>
+	<div id="backBody">	
+		<a class="projectLinks" href="https://randomquoteapi.glitch.me/" target="_blank">
+		<div id="backProject1" class="project">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499288108/Capture_mvte2i.png"></div>
+			<div class="text"><h2 class="tech">Nodejs, CSS3, HTML5, Express, CORS, Request</h2></div>
+			<div id = "backCover1" class="cover"><h2>Random Quote API</div>
+		</div>
+		</a>
+	</div>
+</div>
+<div id="frontContent" class = "content">
+	<a href="#" id="frontHome" class="home">Home</a>
+<a href="#" id="frontFull" class="full">Full-Stack</a>
+	<a href="#" id="frontBack">Back-End</a>
+	<a href="#" id="frontFront">Front-End</a>
+	<div id="frontBody">
+		
+		
+		<a class="projectLinks" href="https://connerisaacs.github.io/Twitch-Viewer-v3/" target="_blank">
+		<div id="frontProject1" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698365/twitch_viewer_uhi1cz.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "frontCover1" class="cover"><h2>Twitch Viewer</div>
+		</div>
+		</a>
+			
+			
+		<a class="projectLinks" href="https://connerisaacs.github.io/PomodoroTimer/" target="_blank">
+		<div id="frontProject2" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/pomodoroTimer_qyadcf.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "frontCover2" class="cover"><h2>Pomodoro Timer</div>
+		</div>
+		</a>
+			
+			
+		<a class="projectLinks" href="https://connerisaacs.github.io/Javascript-Calculator/" target="_blank">
+		<div id="frontProject3" class="frontproject">
+			<div  id="frontPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1497037842/calculator_s7dzz5.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "frontCover3" class="cover"><h2>Javascript Calculator</h2></div>
+		</div>
+		</a>
+			
+			
+			<a class="projectLinks" href="https://codepen.io/Cylthus/full/dWeaVq/" target="_blank">
+		<div id="frontProject4" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/2048_p80ia8.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "frontCover4" class="cover"><h2>2048 Recreation</div>
+		</div>
+		</a>
+				
+				
+				<a class="projectLinks" href="https://connerisaacs.github.io/Tic-Tac-Toe/" target="_blank">
+		<div id="frontProject5" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/TicTacToe_dklqtu.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
+			<div id = "frontCover5" class="cover"><h2>Tic-Tac-Toe</div>
+		</div>
+		</a>
+			
+					<a class="projectLinks" href="http://lbblafayette.com/" target="_blank">
+		<div id="frontProject6" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496775083/lbb_cti2f7.png"></div>
+			<div class="text"><h2 class="tech">CSS3, HTML5</h2></div>
+			<div id = "frontCover6" class="cover"><h2>LBB Lafayette Site</div>
+		</div>
+		</a>
+						
+						<a class="projectLinks" href="http://www.rightclickplus.com/" target="_blank">
+		<div id="frontProject7" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496700343/rightclickplus_zkkfso.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3</h2></div>
+			<div id = "frontCover7" class="cover"><h2>RightClickPlus Site</div>
+		</div>
+		</a>
+					
+	</div>
+</div>
+<div id="nav">
+	<a href="#" id="full" class="full">Full-Stack</a>
+	<a href="#" id="back">Back-End</a>
+	<a href="#" id="front">Front-End</a></div>
+<div id="content">
+<div id="homeTitle">
+	<div id="logo">
+		<p id="title">CI</p>
+		<div id="placeholder"></div>
+	</div>
+	<div id="bar"></div>
+	<div id="text">
+		<div id="name" class="centerContent">
+			<p id="nameP">Conner<span>Isaacs</span></p>
+			<div id="placeholderTwo"></div>
+		</div>
+		<div id="hr">
+			<div id="placeholderFour"></div>
+		</div>
+		<div id="position" class="centerContent">
+			<p id="positionP"><span>Web/Software</span> Developer</p>
+			<div id="placeholderThree"></div>
+		</div>
+	</div>
+</div>
+<div id="circle"></div>
+	<p id="e-mail" class="x">Isaacsc@purdue.edu</p>
+	<p  id="phone" class="x">(317)397-4607</p>
+</div>
+
+<script src="chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/lib/screenlog.js"></script><script>
+document.getElementById("circle").addEventListener("animationend",moveBackground);
+document.getElementById("placeholderThree").addEventListener("animationend",fadeCircle);
+document.getElementById("placeholderTwo").addEventListener("animationend",fadePosition);
+document.getElementById("bar").addEventListener("animationend",fadeName);
+document.getElementById("placeholder").addEventListener("animationend",changeHeight);
+document.getElementById("full").addEventListener("click",getFull);
+document.getElementById("back").addEventListener("click",getBack);
+document.getElementById("front").addEventListener("click",getFront);
+document.getElementById("fullFront").addEventListener("click",getFront);
+document.getElementById("fullBack").addEventListener("click",getBack);
+document.getElementById("backFull").addEventListener("click",getFull);
+document.getElementById("backFront").addEventListener("click",getFront);
+document.getElementById("frontFull").addEventListener("click",getFull);
+document.getElementById("frontBack").addEventListener("click",getBack);
+document.getElementById("backProject1").addEventListener("mouseover",()=>{ 
+document.getElementById("backCover1").style.height = "0%";
+});
+
+document.getElementById("backProject1").addEventListener("mouseout",()=>{ 
+document.getElementById("backCover1").style.height = "100%";
+});
+
+document.getElementById("frontProject1").addEventListener("mouseover",()=>{ 
+document.getElementById("frontCover1").style.height = "0%";
+});
+
+document.getElementById("frontProject2").addEventListener("mouseout",()=>{ 
+document.getElementById("frontCover2").style.height = "100%";
+});
+var x = document.getElementsByClassName("home");
+for(var i = 0; i < x.length;i++){
+	x[i].addEventListener("click",goHome);
+}
+function goHome(){
+	var front = document.getElementById("frontContent");
+	var back = document.getElementById("backContent");
+	var full = document.getElementById("fullContent");
+	
+	front.style.height = "0%";
+	front.style.width = "0%";
+	back.style.height = "0%";
+	back.style.width = "0%";
+	full.style.height = "0%";
+	full.style.width = "0%";
+	
+}
+document.getElementById("frontProject2").addEventListener("mouseover",()=>{ 
+document.getElementById("frontCover2").style.height = "0%";
+});
+
+document.getElementById("frontProject3").addEventListener("mouseout",()=>{ 
+document.getElementById("frontCover3").style.height = "100%";
+});
+
+document.getElementById("frontProject3").addEventListener("mouseover",()=>{ 
+document.getElementById("frontCover3").style.height = "0%";
+});
+
+document.getElementById("frontProject4").addEventListener("mouseout",()=>{ 
+document.getElementById("frontCover4").style.height = "100%";
+});
+
+document.getElementById("frontProject4").addEventListener("mouseover",()=>{ 
+document.getElementById("frontCover4").style.height = "0%";
+});
+
+document.getElementById("frontProject5").addEventListener("mouseout",()=>{ 
+document.getElementById("frontCover5").style.height = "100%";
+});
+
+document.getElementById("frontProject5").addEventListener("mouseover",()=>{ 
+document.getElementById("frontCover5").style.height = "0%";
+});
+
+document.getElementById("frontProject6").addEventListener("mouseout",()=>{ 
+document.getElementById("frontCover6").style.height = "100%";
+});
+
+document.getElementById("frontProject6").addEventListener("mouseover",()=>{ 
+document.getElementById("frontCover6").style.height = "0%";
+});
+
+document.getElementById("frontProject7").addEventListener("mouseout",()=>{ 
+document.getElementById("frontCover7").style.height = "100%";
+});
+
+document.getElementById("frontProject7").addEventListener("mouseover",()=>{ 
+document.getElementById("frontCover7").style.height = "0%";
+});
+
+document.getElementById("frontProject1").addEventListener("mouseout",()=>{ 
+document.getElementById("frontCover1").style.height = "100%";
+});
+
+document.getElementById("fullProject1").addEventListener("mouseover",()=>{ 
+document.getElementById("fullCover1").style.height = "0%";
+});
+
+document.getElementById("fullProject1").addEventListener("mouseout",()=>{ 
+document.getElementById("fullCover1").style.height = "100%";
+});
+
+document.getElementById("fullProject2").addEventListener("mouseover",()=>{ 
+document.getElementById("fullCover2").style.height = "0%";
+});
+
+document.getElementById("fullProject2").addEventListener("mouseout",()=>{ 
+document.getElementById("fullCover2").style.height = "100%";
+});
+
+
+
+
+function changeHeight(){
+	document.getElementById("bar").style.animation = "height .5s forwards";	
+	document.getElementById("placeholderFour").style.animation="opacity .5s forwards";
+}
+
+function getFront(){
+	var x = document.getElementById("frontContent");
+	x.style.width = "100%";
+	x.style.height = "100%";
+	x.style.zIndex = "2";
+	x.style.overflow = "scroll";
+	x.style.overflowX = "hidden";
+	document.getElementById("backContent").style.zIndex = "1";
+	document.getElementById("fullContent").style.zIndex = "1";
+	document.getElementById("backContent").style.overflow = "hidden";
+	document.getElementById("fullContent").style.overflow = "hidden";
+	getSmaller("backContent");
+	getSmaller("fullContent");
+}
+
+function getSmaller(x){
+	var z = document.getElementById(x);
+	z.style.width = "0%";
+	z.style.height = "0%";
+}
+
+function getBack(){
+	var x = document.getElementById("backContent");
+			x.style.width = "100%";
+			x.style.height = "100%";
+			x.style.zIndex = "2";
+	x.style.overflow = "scroll";
+	x.style.overflowX = "hidden";
+			document.getElementById("frontContent").style.zIndex = "1";
+			document.getElementById("fullContent").style.zIndex = "1";
+	document.getElementById("frontContent").style.overflow = "hidden";
+			document.getElementById("fullContent").style.overflow = "hidden";
+			getSmaller("fullContent");
+			getSmaller("frontContent");
+}
+
+function getFull(){
+			var x = document.getElementById("fullContent");
+			x.style.width = "100%";
+			x.style.height = "100%";
+			x.style.zIndex = "2";
+	x.style.overflow = "scroll";
+	x.style.overflowX = "hidden";
+			document.getElementById("backContent").style.zIndex = "1";
+			document.getElementById("frontContent").style.zIndex = "1";
+	document.getElementById("backContent").style.overflow = "hidden";
+			document.getElementById("frontContent").style.overflow = "hidden";
+			getSmaller("backContent");
+			getSmaller("frontContent");
+}
+
+function fadeName(){
+	document.getElementById("placeholderTwo").style.animation = "opacity .3s forwards";
+}
+
+function fadePosition(){
+	document.getElementById("placeholderThree").style.animation = "opacity .3s forwards";
+}
+function fadeCircle(){
+	document.getElementById("circle").style.animation = "circle .7s forwards";
+}
+
+var lFollowX = 0,
+    lFollowY = 0,
+    x = 0,
+    y = 0,
+    friction = 1 / 30;
+
+function moveBackground() {
+  x += (lFollowX - x) * friction;
+  y += (lFollowY - y) * friction; 
+  translate = 'translate(' + x + 'px, ' + y + 'px)';
+  $('#homeTitle').css({
+    '-webit-transform': translate,
+    '-moz-transform': translate,
+    'transform': translate
+  });
+  window.requestAnimationFrame(moveBackground);
+}
+
+$(window).on('mousemove click', function(e) {
+  var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+  var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+  lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+  lFollowY = (10 * lMouseY) / 100;
+});
+
+//# sourceURL=userscript.js
+</script>
+</body>
+</html>
