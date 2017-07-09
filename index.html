@@ -540,10 +540,10 @@ span{
 		</a>
 		
 		<a class="projectLinks" href="https://imageabstraction.glitch.me/" target="_blank">
-		<div id="backProject1" class="project">
+		<div id="backProject2" class="project">
 			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499565324/Capture_juh9pe.png"></div>
 			<div class="text"><h2 class="tech">Nodejs, CSS3, HTML5, Express, CORS, Request, MongoDB, Mongoose</h2></div>
-			<div id = "backCover1" class="cover"><h2>Image Abstraction API</div>
+			<div id = "backCover2" class="cover"><h2>Image Abstraction API</div>
 		</div>
 		</a>
 	</div>
@@ -669,6 +669,14 @@ document.getElementById("backCover1").style.height = "0%";
 
 document.getElementById("backProject1").addEventListener("mouseout",function(){ 
 document.getElementById("backCover1").style.height = "100%";
+});
+
+document.getElementById("backProject2").addEventListener("mouseover",function(){ 
+document.getElementById("backCover2").style.height = "0%";
+});
+
+document.getElementById("backProject2").addEventListener("mouseout",function(){ 
+document.getElementById("backCover2").style.height = "100%";
 });
 
 document.getElementById("frontProject1").addEventListener("mouseover",function(){ 
