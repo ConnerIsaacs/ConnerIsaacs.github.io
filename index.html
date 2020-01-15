@@ -8,7 +8,7 @@
 	margin:0px;
 	padding:0px;
 }
-#fullBody,#backBody,#frontBody{
+#backBody,#frontBody{
 	position:absolute;
 	height:50%;
 	width:90%;
@@ -33,9 +33,6 @@
 }
 .home:hover{
 	background-size:100% 100%;
-}
-#fullHome:hover{
-		color:#8AACB8;
 }
 #frontHome:hover{
 	color:#EE6363;
@@ -111,16 +108,6 @@ html,body{
 	min-height:300px;
 	min-width:300px;
 }
-#fullContent{
-	position:absolute;
-	top:0;
-	left:0;
-	background-color:#8AACB8;
-	transition:.5s all;
-	width:0px;
-	height:0px;
-	z-index:5;
-}
 #backContent{
 	position:absolute;
 	top:0;
@@ -167,10 +154,6 @@ p{
 	height:60%;
 	display:flex;
 	justify-content:center;
-}
-#fullContent .cover{
-	background-color:#8AACB8;
-	z-index:3;
 }
 .cover{
 	display:flex;
@@ -227,18 +210,6 @@ a {
 	transition:all .5s;
 	padding:10px;
 	box-sizing:border-box;
-}
-#full{
-	color:#8AACB8;
-	background-image: linear-gradient(#8AACB8, #8AACB8);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-	border:1px solid #8AACB8;
-}
-#full:hover{
-	color:white;
-	background-size: 105% 100%;
 }
 #back{
 	color:#78AB46;
@@ -363,7 +334,7 @@ span{
 	color:#78AB46;
 	background-color:white;
 }
-#backFull,#backFront{
+#backFront{
 	color:white;
 	border:1px solid white;
 	background-image: linear-gradient(white, white);
@@ -371,27 +342,12 @@ span{
   background-repeat: no-repeat;
   background-size: 0% 100%;
 }
-#backFull:hover,#backFront:hover{
+#backFront:hover{
 	color:#78AB46;
 	background-size:105% 100%;
 }
-#fullFront,#fullBack{
-	color:white;
-	border:1px solid white;
-	background-image: linear-gradient(white, white);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-}
-#fullFull{
-	color:#8AACB8;
-	background-color:white;
-}
-#fullFront:hover,#fullBack:hover{
-	color:#8AACB8;
-	background-size:105% 100%;
-}
-#frontFull,#frontBack{
+
+#frontBack{
 	color:white;
 	border:1px solid white;
 	background-image: linear-gradient(white, white);
@@ -403,7 +359,7 @@ span{
 	color:#EE6363;
 	background-color:white;
 }
-#frontFull:hover,#frontBack:hover{
+#frontBack:hover{
 	color:#EE6363;
 	background-size:105% 100%;
 }
@@ -477,10 +433,7 @@ span{
     #circle {
         right:25%;
     }
-	.full{
-		margin-right:10%;
-	}
-	#fullBody,#frontBody,#backBody{
+	#frontBody,#backBody{
 		width:70%;
 	}
 }
@@ -488,10 +441,7 @@ span{
     #circle {
         right:35%;
     }
-	.full {
-		margin-right:15%;
-	}
-	#fullBody,#frontBody,#backBody{
+	#frontBody,#backBody{
 		width:60%;
 	}
 }
@@ -501,41 +451,15 @@ span{
 <head>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<div id="fullContent" class="content">
-	<a href="#" id="fullHome" class="home">Home</a>
-	<a href="#" id="fullFull" class="full">Full-Stack</a>
-	<a href="#" id="fullBack">Back-End</a>
-	<a href="#" id="fullFront">Front-End</a>
-	<div id="fullBody">
-		
-		<a class="projectLinks" href="https://realtime-chat.glitch.me/" target="_blank">
-		<div id="fullProject1" class="project">
-			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499285404/Capture_aaxskc.png"></div>
-			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript, Nodejs, MongoDB, Mongoose, Express, Request, Static.io</h2></div>
-			<div id = "fullCover1" class="cover"><h2>Real-time Chat Application</div>
-		</div>
-		</a>
-			
-			<a class="projectLinks" href="https://connerisaacs.github.io/Random/" target="_blank">
-		<div id="fullProject2" class="project">
-			<div  id="fullPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/RandomQuote_w9yvld.png"></div>
-			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
-			<div id = "fullCover2" class="cover"><h2>Random Quote Generator</div>
-		</div>
-		</a>
-				
-	</div>
-</div>
 <div id="backContent" class="content">
 	<a href="#" id="backHome" class="home">Home</a>
-	<a href="#" id="backFull" class="full">Full-Stack</a>
 	<a href="#" id="backBack">Back-End</a>
 	<a href="#" id="backFront">Front-End</a>
 	<div id="backBody">	
 		<a class="projectLinks" href="https://randomquoteapi.glitch.me/" target="_blank">
 		<div id="backProject1" class="project">
 			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499288108/Capture_mvte2i.png"></div>
-			<div class="text"><h2 class="tech">Nodejs, CSS3, HTML5, Express, CORS, Request</h2></div>
+			<div class="text"><h2 class="tech">HTML, CSS, Javascript, Node.js</h2></div>
 			<div id = "backCover1" class="cover"><h2>Random Quote API</div>
 		</div>
 		</a>
@@ -543,7 +467,7 @@ span{
 			<a class="projectLinks" href="https://webscrapeapi.glitch.me/" target="_blank">
 		<div id="backProject3" class="project">
 			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499664243/Capture_om1knm.png"></div>
-			<div class="text"><h2 class="tech">Nodejs, CSS3, HTML5, Express, CORS, Request, MongoDB, Mongoose</h2></div>
+			<div class="text"><h2 class="tech">HTML, CSS, Javascript, Node.js, MongoDB</h2></div>
 			<div id = "backCover3" class="cover"><h2>Web Scraper API</div>
 		</div>
 		</a>
@@ -551,7 +475,7 @@ span{
 		<a class="projectLinks" href="https://imageabstraction.glitch.me/" target="_blank">
 		<div id="backProject2" class="project">
 			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499565324/Capture_juh9pe.png"></div>
-			<div class="text"><h2 class="tech">Nodejs, CSS3, HTML5, Express, CORS, Request, MongoDB, Mongoose</h2></div>
+			<div class="text"><h2 class="tech">HTML, CSS, Javascript, Nodejs, MongoDB</h2></div>
 			<div id = "backCover2" class="cover"><h2>Image Abstraction API</div>
 		</div>
 		</a>
@@ -559,35 +483,22 @@ span{
 </div>
 <div id="frontContent" class = "content">
 	<a href="#" id="frontHome" class="home">Home</a>
-<a href="#" id="frontFull" class="full">Full-Stack</a>
 	<a href="#" id="frontBack">Back-End</a>
 	<a href="#" id="frontFront">Front-End</a>
 	<div id="frontBody">
-		
-		
-		<a class="projectLinks" href="https://connerisaacs.github.io/Twitch-Viewer-v3/" target="_blank">
-		<div id="frontProject1" class="frontproject">
-			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698365/twitch_viewer_uhi1cz.png"></div>
+				<a class="projectLinks" href="https://pollsterlaunch.glitch.me/" target="_blank">
+		<div id="frontProject7" class="frontproject">
+			<div  id="backPreview1" class="preview"><img src="https://res.cloudinary.com/dfpvu7r4b/image/upload/v1579127662/pollsterpic_t3ozwy.png"></div>
 			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
-			<div id = "frontCover1" class="cover"><h2>Twitch Viewer</div>
+			<div id = "frontCover7" class="cover"><h2>Pollster: Full-Stack Voting Application</div>
 		</div>
 		</a>
-			
-			
+				
 		<a class="projectLinks" href="https://connerisaacs.github.io/PomodoroTimer/" target="_blank">
 		<div id="frontProject2" class="frontproject">
 			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496698361/pomodoroTimer_qyadcf.png"></div>
 			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
 			<div id = "frontCover2" class="cover"><h2>Pomodoro Timer</div>
-		</div>
-		</a>
-			
-			
-		<a class="projectLinks" href="https://connerisaacs.github.io/Javascript-Calculator/" target="_blank">
-		<div id="frontProject3" class="frontproject">
-			<div  id="frontPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1497037842/calculator_s7dzz5.png"></div>
-			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript</h2></div>
-			<div id = "frontCover3" class="cover"><h2>Javascript Calculator</h2></div>
 		</div>
 		</a>
 			
@@ -608,29 +519,20 @@ span{
 			<div id = "frontCover5" class="cover"><h2>Tic-Tac-Toe</div>
 		</div>
 		</a>
-			
-					<a class="projectLinks" href="http://lbblafayette.com/" target="_blank">
-		<div id="frontProject6" class="frontproject">
-			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496775083/lbb_cti2f7.png"></div>
-			<div class="text"><h2 class="tech">CSS3, HTML5</h2></div>
-			<div id = "frontCover6" class="cover"><h2>LBB Lafayette Site</div>
-		</div>
-		</a>
-						
-						<a class="projectLinks" href="http://www.rightclickplus.com/" target="_blank">
-		<div id="frontProject7" class="frontproject">
-			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1496700343/rightclickplus_zkkfso.png"></div>
-			<div class="text"><h2 class="tech">HTML5, CSS3</h2></div>
-			<div id = "frontCover7" class="cover"><h2>RightClickPlus Site</div>
-		</div>
-		</a>
 					
+		<a class="projectLinks" href="https://realtime-chat.glitch.me/" target="_blank">
+		<div id="fullProject1" class="project">
+			<div  id="backPreview1" class="preview"><img src="http://res.cloudinary.com/dfpvu7r4b/image/upload/v1499285404/Capture_aaxskc.png"></div>
+			<div class="text"><h2 class="tech">HTML5, CSS3, Javascript, Nodejs, MongoDB</h2></div>
+			<div id = "fullCover1" class="cover"><h2>Real-time Chat Application</div>
+		</div>
+		</a>
+		
 	</div>
 </div>
 <div id="nav">
-	<a href="#" id="full" class="full">Full-Stack</a>
 	<a href="#" id="back">Back-End</a>
-	<a href="#" id="front">Front-End</a></div>
+	<a href="#" id="front">Web Applications</a></div>
 <div id="content">
 <div id="homeTitle">
 	<div id="logo">
@@ -663,14 +565,9 @@ document.getElementById("placeholderThree").addEventListener("animationend",fade
 document.getElementById("placeholderTwo").addEventListener("animationend",fadePosition);
 document.getElementById("bar").addEventListener("animationend",fadeName);
 document.getElementById("placeholder").addEventListener("animationend",changeHeight);
-document.getElementById("full").addEventListener("click",getFull);
 document.getElementById("back").addEventListener("click",getBack);
 document.getElementById("front").addEventListener("click",getFront);
-document.getElementById("fullFront").addEventListener("click",getFront);
-document.getElementById("fullBack").addEventListener("click",getBack);
-document.getElementById("backFull").addEventListener("click",getFull);
 document.getElementById("backFront").addEventListener("click",getFront);
-document.getElementById("frontFull").addEventListener("click",getFull);
 document.getElementById("frontBack").addEventListener("click",getBack);
 document.getElementById("backProject1").addEventListener("mouseover",function(){ 
 document.getElementById("backCover1").style.height = "0%";
@@ -696,12 +593,19 @@ document.getElementById("backProject3").addEventListener("mouseout",function(){
 document.getElementById("backCover3").style.height = "100%";
 });
 
-document.getElementById("frontProject1").addEventListener("mouseover",function(){ 
-document.getElementById("frontCover1").style.height = "0%";
-});
-
 document.getElementById("frontProject2").addEventListener("mouseout",function(){ 
 document.getElementById("frontCover2").style.height = "100%";
+});
+document.getElementById("frontProject7").addEventListener("mouseout",function(){ 
+document.getElementById("frontCover7").style.height = "100%";
+});
+							
+							document.getElementById("fullProject1").addEventListener("mouseover",function(){ 
+document.getElementById("fullCover1").style.height = "0%";
+});
+
+document.getElementById("fullProject1").addEventListener("mouseout",function(){ 
+document.getElementById("fullCover1").style.height = "100%";
 });
 var x = document.getElementsByClassName("home");
 for(var i = 0; i < x.length;i++){
@@ -710,26 +614,16 @@ for(var i = 0; i < x.length;i++){
 function goHome(){
 	var front = document.getElementById("frontContent");
 	var back = document.getElementById("backContent");
-	var full = document.getElementById("fullContent");
-	
 	front.style.height = "0%";
 	front.style.width = "0%";
 	back.style.height = "0%";
 	back.style.width = "0%";
-	full.style.height = "0%";
-	full.style.width = "0%";
-	
 }
 document.getElementById("frontProject2").addEventListener("mouseover",function(){ 
 document.getElementById("frontCover2").style.height = "0%";
 });
-
-document.getElementById("frontProject3").addEventListener("mouseout",function(){ 
-document.getElementById("frontCover3").style.height = "100%";
-});
-
-document.getElementById("frontProject3").addEventListener("mouseover",function(){ 
-document.getElementById("frontCover3").style.height = "0%";
+				document.getElementById("frontProject7").addEventListener("mouseover",function(){ 
+document.getElementById("frontCover7").style.height = "0%";
 });
 
 document.getElementById("frontProject4").addEventListener("mouseout",function(){ 
@@ -748,44 +642,9 @@ document.getElementById("frontProject5").addEventListener("mouseover",function()
 document.getElementById("frontCover5").style.height = "0%";
 });
 
-document.getElementById("frontProject6").addEventListener("mouseout",function(){ 
-document.getElementById("frontCover6").style.height = "100%";
-});
-
-document.getElementById("frontProject6").addEventListener("mouseover",function(){ 
-document.getElementById("frontCover6").style.height = "0%";
-});
-
-document.getElementById("frontProject7").addEventListener("mouseout",function(){ 
-document.getElementById("frontCover7").style.height = "100%";
-});
-
-document.getElementById("frontProject7").addEventListener("mouseover",function(){ 
-document.getElementById("frontCover7").style.height = "0%";
-});
-
 document.getElementById("frontProject1").addEventListener("mouseout",function(){ 
 document.getElementById("frontCover1").style.height = "100%";
 });
-
-document.getElementById("fullProject1").addEventListener("mouseover",function(){ 
-document.getElementById("fullCover1").style.height = "0%";
-});
-
-document.getElementById("fullProject1").addEventListener("mouseout",function(){ 
-document.getElementById("fullCover1").style.height = "100%";
-});
-
-document.getElementById("fullProject2").addEventListener("mouseover",function(){ 
-document.getElementById("fullCover2").style.height = "0%";
-});
-
-document.getElementById("fullProject2").addEventListener("mouseout",function(){ 
-document.getElementById("fullCover2").style.height = "100%";
-});
-
-
-
 
 function changeHeight(){
 	document.getElementById("bar").style.animation = "height .5s forwards";	
@@ -800,11 +659,8 @@ function getFront(){
 	x.style.overflow = "auto";
 	x.style.overflowX = "hidden";
 	document.getElementById("backContent").style.zIndex = "1";
-	document.getElementById("fullContent").style.zIndex = "1";
 	document.getElementById("backContent").style.overflow = "hidden";
-	document.getElementById("fullContent").style.overflow = "hidden";
 	getSmaller("backContent");
-	getSmaller("fullContent");
 }
 
 function getSmaller(x){
@@ -821,25 +677,7 @@ function getBack(){
 	x.style.overflow = "auto";
 	x.style.overflowX = "hidden";
 			document.getElementById("frontContent").style.zIndex = "1";
-			document.getElementById("fullContent").style.zIndex = "1";
 	document.getElementById("frontContent").style.overflow = "hidden";
-			document.getElementById("fullContent").style.overflow = "hidden";
-			getSmaller("fullContent");
-			getSmaller("frontContent");
-}
-
-function getFull(){
-			var x = document.getElementById("fullContent");
-			x.style.width = "100%";
-			x.style.height = "100%";
-			x.style.zIndex = "2";
-	x.style.overflow = "auto";
-	x.style.overflowX = "hidden";
-			document.getElementById("backContent").style.zIndex = "1";
-			document.getElementById("frontContent").style.zIndex = "1";
-	document.getElementById("backContent").style.overflow = "hidden";
-			document.getElementById("frontContent").style.overflow = "hidden";
-			getSmaller("backContent");
 			getSmaller("frontContent");
 }
 
